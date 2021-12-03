@@ -1,3 +1,64 @@
-#table{
+body {
+    background-image: url(images/PageBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
 
+   #description{
+       color: white;
+       margin-left: 30%;
+       margin-top: 18%;
+       font-family: 'Permanent Marker', cursive;
+       font-size: x-large;
+       
+   }
+
+#clickme{
+   
+    padding: 10px;
+    margin-left: 45%;
+    
 }
+
+
+
+table {
+    border: 1px solid #000000;
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    
+  }
+  /*style td and th*/
+  table td, table th {
+    
+    padding: 4px 7px;
+  }
+
+  /*style table body and  td*/
+  table tbody td {
+    font-size: 13px;
+    color: #080000;
+  }
+  /*style even numbered cell*/
+  table tr:nth-child(even) {
+    background: #5AC5C5;
+  }
+
+  /*style thead*/
+  table thead {
+    background: #000000;
+    
+  }
+  /*style thead th*/
+  table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #E6E6E6;
+    text-align: center;
+    border-left: 1px solid #0c0c0c;
+  }
+  
+  table thead th:first-child {
+    border-left: none;
+  }
