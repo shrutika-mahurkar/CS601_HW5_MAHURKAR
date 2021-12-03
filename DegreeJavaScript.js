@@ -1,10 +1,17 @@
+/* jsonFetch function is used to create a fetch request */ 
 async function jsonFetch(url="https://shrutika-mahurkar.github.io/CS601_HW5_MAHURKAR/Degree.json"){
   
-    let response = await fetch(url);
+/*Create response object*/ 
+let response = new Response();
+/*fetch request */
+     response = await fetch(url);
     
+     /*check response status*/ 
     if(response.ok){
+      /*Process the returned JSON data  */
         let jsonVariable = await response.json();
         
+        /* create table  */
         var data='<thead><tr><th>School</th><th>Major</th><th>Type</th><th>Year-Conferred</th></tr></thead><tbody>';
        
         for(let i = 0; i<jsonVariable["my_degree_program"].length;i++){
@@ -17,16 +24,16 @@ async function jsonFetch(url="https://shrutika-mahurkar.github.io/CS601_HW5_MAHU
         }
       
     }else{
+        /* display error */
         document.getElementById("error").innerHTML ="HTTP Error found : " + response.status; 
     }
 
+    /* display table */
     document.getElementById("table").innerHTML = data +"</tbody>";
-    
-    document.getElementById("clickme").style.visibility = 'hidden';
-    document.getElementById("description").style.visibility = 'hidden'; 
-   /* document.getElementsByClassName("hiddenClass").style.visibility = 'hidden';
-   if deleted remove class name from html
-   */
+    /* remove container on clicking*/
+    document.getElementById("container").remove();
+  
 
     
 }
+

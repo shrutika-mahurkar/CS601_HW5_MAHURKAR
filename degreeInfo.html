@@ -10,9 +10,13 @@
     </head>
     <body>
         
-        <!--On clicking button create a fetch request-->
-       <p id="description" class="hiddenClass">Click below to explore educational background</p>
+        <div id="container">
+        <p id="description" class="hiddenClass">Click below to explore educational background</p>
+        <!--On click call jsonFetch function-->
         <button id="clickme" class="hiddenClass" onclick="jsonFetch()">Click Me</button>
+
+        
+    </div>
         <table id= "table">
             <tbody id="tableBody"></tbody>
         </table>
