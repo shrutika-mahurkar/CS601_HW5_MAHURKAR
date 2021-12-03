@@ -1,0 +1,21 @@
+{
+"my_degree_program":[
+    {
+        
+            "school": "Nagpur University",
+            "major": "Electronics and Telecommnunication",
+            "type":"Bachelors of Engineering",
+            "year-conferred":2017
+        
+        
+    },
+    {
+        "school": "Boston University",
+        "major":"Software Development",
+        "type":"Masters of Science",
+        "year-conferred":2023
+    }
+   
+
+]
+}
