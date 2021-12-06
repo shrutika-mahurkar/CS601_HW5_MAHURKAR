@@ -1,8 +1,10 @@
 /*style body */
 body {
-    background-image: url(images/PageBackground.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    height: 100%;
+    
+    
    }
 /*style container*/
    #container{
@@ -37,7 +39,8 @@ table {
     height: 30%;
     text-align: center;
     margin-top: 15%;
-    margin-left: 29%;
+    margin-right: 25%;
+    margin-left: 25%;
    
     
   }
@@ -69,7 +72,31 @@ table {
     border-left: 1px solid #ffffff;
   }
 
+  /*style error*/
   #error{
-    font-size: large;
-    color: #000;
-  }
+   font-size: 60px;
+    color: #ffff;
+    position: absolute;
+   
+    margin-top: 15%;
+}
+  
+/*Style greenboard*/
+#greenboard{
+
+  background-color: #106210;
+  width: 700px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    border-block-color: brown;
+    box-shadow: 2px;
+    border-width: 20px;
+    border-color: #915827;
+    border-style: ridge;
+    top: 10%;
+}

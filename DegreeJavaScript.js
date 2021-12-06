@@ -2,6 +2,7 @@
 var jsonFetch;
 async function jsonFetch(url="https://shrutika-mahurkar.github.io/CS601_HW5_MAHURKAR/Degree.json"){
   
+
 /*Create response object*/ 
 let response = new Response();
 /*fetch request */
@@ -26,7 +27,13 @@ let response = new Response();
       
     }else{
         /* display error */
+     
         document.getElementById("error").innerHTML ="HTTP Error found : " + response.status; 
+        document.getElementById("table").remove();
+        document.getElementById("container").remove();
+        // var element =  document.body;
+        // element.style.backgroundColor="white";
+        document.body.style.backgroundImage.remove();
     }
 
     /* display table */
