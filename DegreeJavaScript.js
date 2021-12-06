@@ -1,4 +1,5 @@
 /* jsonFetch function is used to create a fetch request */ 
+var jsonFetch;
 async function jsonFetch(url="https://shrutika-mahurkar.github.io/CS601_HW5_MAHURKAR/Degree.json"){
   
 /*Create response object*/ 
